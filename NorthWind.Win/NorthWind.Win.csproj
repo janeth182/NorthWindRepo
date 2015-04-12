@@ -100,6 +100,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Northwind.DAO\Northwind.DAO.csproj">
+      <Project>{0ac5c8b9-845f-4d7a-8276-3bf8bad07fca}</Project>
+      <Name>Northwind.DAO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NorthWind.Entity\NorthWind.Entity.csproj">
       <Project>{51ff19d0-adca-4aeb-a13d-569471df68a0}</Project>
       <Name>NorthWind.Entity</Name>

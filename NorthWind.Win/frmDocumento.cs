@@ -75,5 +75,10 @@ namespace NorthWind.Win
             txttotal.Text = oFacturaBL.Total.ToString();
 
         }
+
+        private void frmDocumento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

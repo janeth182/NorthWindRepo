@@ -4,6 +4,6 @@ C:\NET\Sesion2\NorthwindSolution\NorthWind.Entity\obj\Debug\NorthWind.Entity.dll
 C:\NET\Sesion2\NorthwindSolution\NorthWind.Entity\obj\Debug\NorthWind.Entity.pdb
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Entity\bin\Debug\NorthWind.Entity.dll
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Entity\bin\Debug\NorthWind.Entity.pdb
+C:\RepositoryGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.csprojResolveAssemblyReference.cache
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.dll
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.pdb
-C:\RepositoryGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.csprojResolveAssemblyReference.cache

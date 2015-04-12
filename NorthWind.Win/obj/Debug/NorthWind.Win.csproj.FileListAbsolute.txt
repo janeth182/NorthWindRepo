@@ -27,3 +27,5 @@ C:\RepositoryGIT\NorthWindRepo\NorthWind.Win\bin\Debug\NorthWind.Entity.dll
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Win\bin\Debug\NorthWind.Entity.pdb
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Win\obj\Debug\NorthWind.Win.exe
 C:\RepositoryGIT\NorthWindRepo\NorthWind.Win\obj\Debug\NorthWind.Win.pdb
+C:\RepositoryGIT\NorthWindRepo\NorthWind.Win\bin\Debug\Northwind.DAO.dll
+C:\RepositoryGIT\NorthWindRepo\NorthWind.Win\bin\Debug\Northwind.DAO.pdb
