@@ -15,5 +15,7 @@ namespace NorthWind.Entity
         public decimal Total { get; set; }
         public DateTime FechaHora { get; set; }
         public eTipoDocumento TipoDocumento { get; set; }
+
+       
     }
 }

@@ -19,5 +19,7 @@ namespace NorthWind.Entity
             get { return Precio * Cantidad; }
         }
 
+      
+    
     }
 }
