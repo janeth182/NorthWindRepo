@@ -47,6 +47,13 @@
             this.txtproducto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.itemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codProductoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -54,12 +61,6 @@
             this.txtigv = new System.Windows.Forms.TextBox();
             this.txttotal = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.itemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -93,6 +94,7 @@
             // 
             // txtruc
             // 
+            this.txtruc.Enabled = false;
             this.txtruc.Location = new System.Drawing.Point(321, 11);
             this.txtruc.Name = "txtruc";
             this.txtruc.Size = new System.Drawing.Size(100, 20);
@@ -109,6 +111,7 @@
             // 
             // txtcliente
             // 
+            this.txtcliente.Enabled = false;
             this.txtcliente.Location = new System.Drawing.Point(66, 35);
             this.txtcliente.Name = "txtcliente";
             this.txtcliente.Size = new System.Drawing.Size(187, 20);
@@ -179,8 +182,9 @@
             // 
             this.txtcantidad.Location = new System.Drawing.Point(184, 39);
             this.txtcantidad.Name = "txtcantidad";
-            this.txtcantidad.Size = new System.Drawing.Size(104, 20);
+            this.txtcantidad.Size = new System.Drawing.Size(81, 20);
             this.txtcantidad.TabIndex = 1;
+            this.txtcantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcantidad_KeyPress);
             // 
             // label6
             // 
@@ -193,6 +197,7 @@
             // 
             // txtprecio
             // 
+            this.txtprecio.Enabled = false;
             this.txtprecio.Location = new System.Drawing.Point(66, 41);
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Size = new System.Drawing.Size(62, 20);
@@ -209,6 +214,7 @@
             // 
             // txtproducto
             // 
+            this.txtproducto.Enabled = false;
             this.txtproducto.Location = new System.Drawing.Point(66, 12);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.Size = new System.Drawing.Size(186, 20);
@@ -225,10 +231,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.itemDataGridViewTextBoxColumn,
+            this.codProductoDataGridViewTextBoxColumn,
             this.productoDataGridViewTextBoxColumn,
             this.precioDataGridViewTextBoxColumn,
             this.cantidadDataGridViewTextBoxColumn,
@@ -236,71 +244,24 @@
             this.dataGridView1.DataSource = this.DocumentoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 147);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 126);
+            this.dataGridView1.Size = new System.Drawing.Size(552, 126);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(291, 291);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Sub Total:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(318, 321);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "IGV:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(312, 344);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(34, 13);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Total:";
-            // 
-            // txtsubtotal
-            // 
-            this.txtsubtotal.Location = new System.Drawing.Point(356, 288);
-            this.txtsubtotal.Name = "txtsubtotal";
-            this.txtsubtotal.Size = new System.Drawing.Size(78, 20);
-            this.txtsubtotal.TabIndex = 6;
-            // 
-            // txtigv
-            // 
-            this.txtigv.Location = new System.Drawing.Point(356, 314);
-            this.txtigv.Name = "txtigv";
-            this.txtigv.Size = new System.Drawing.Size(78, 20);
-            this.txtigv.TabIndex = 7;
-            // 
-            // txttotal
-            // 
-            this.txttotal.Location = new System.Drawing.Point(356, 340);
-            this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(78, 20);
-            this.txttotal.TabIndex = 8;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(201, 291);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(71, 66);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Guardar";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // itemDataGridViewTextBoxColumn
             // 
             this.itemDataGridViewTextBoxColumn.DataPropertyName = "Item";
+            this.itemDataGridViewTextBoxColumn.FillWeight = 90F;
             this.itemDataGridViewTextBoxColumn.HeaderText = "Item";
             this.itemDataGridViewTextBoxColumn.Name = "itemDataGridViewTextBoxColumn";
+            this.itemDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // codProductoDataGridViewTextBoxColumn
+            // 
+            this.codProductoDataGridViewTextBoxColumn.DataPropertyName = "CodProducto";
+            this.codProductoDataGridViewTextBoxColumn.HeaderText = "CodProducto";
+            this.codProductoDataGridViewTextBoxColumn.Name = "codProductoDataGridViewTextBoxColumn";
+            this.codProductoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codProductoDataGridViewTextBoxColumn.Width = 50;
             // 
             // productoDataGridViewTextBoxColumn
             // 
@@ -331,11 +292,69 @@
             // 
             this.DocumentoBindingSource.DataSource = typeof(NorthWind.Entity.ItemBE);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(421, 295);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Sub Total:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(448, 325);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "IGV:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(442, 348);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 13);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Total:";
+            // 
+            // txtsubtotal
+            // 
+            this.txtsubtotal.Location = new System.Drawing.Point(473, 292);
+            this.txtsubtotal.Name = "txtsubtotal";
+            this.txtsubtotal.Size = new System.Drawing.Size(91, 20);
+            this.txtsubtotal.TabIndex = 6;
+            // 
+            // txtigv
+            // 
+            this.txtigv.Location = new System.Drawing.Point(473, 318);
+            this.txtigv.Name = "txtigv";
+            this.txtigv.Size = new System.Drawing.Size(91, 20);
+            this.txtigv.TabIndex = 7;
+            // 
+            // txttotal
+            // 
+            this.txttotal.Location = new System.Drawing.Point(473, 344);
+            this.txttotal.Name = "txttotal";
+            this.txttotal.Size = new System.Drawing.Size(91, 20);
+            this.txttotal.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(331, 295);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(71, 66);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Guardar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // frmDocumento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 362);
+            this.ClientSize = new System.Drawing.Size(589, 384);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.txttotal);
             this.Controls.Add(this.txtigv);
@@ -347,7 +366,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDocumento";
-            this.Text = "frmDocumento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Factura";
             this.Load += new System.EventHandler(this.frmDocumento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -379,7 +399,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtproducto;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -387,11 +406,13 @@
         private System.Windows.Forms.TextBox txtigv;
         private System.Windows.Forms.TextBox txttotal;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.BindingSource DocumentoBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codProductoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource DocumentoBindingSource;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

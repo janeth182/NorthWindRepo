@@ -9,6 +9,7 @@ namespace NorthWind.Entity
     public class ItemBE
     {
         public int Item { get; set; }
+        public string CodProducto { get { return Producto.CodProducto; } }
         public string CodigoDetalle { get; set; }
         public string CodDocumento { get; set; }
         public TbProductoBE Producto { get; set; }

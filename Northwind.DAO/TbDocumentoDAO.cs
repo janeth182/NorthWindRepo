@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Northwind.DAO
 {
-    class TbDocumentoDAO
+    public class TbDocumentoDAO
     {
+
     }
 }
