@@ -19,3 +19,10 @@ E:\RepositorioGit\NorthWindRepo\Northwind.DAO\bin\Debug\NorthWind.Entity.pdb
 E:\RepositorioGit\NorthWindRepo\Northwind.DAO\obj\Debug\Northwind.DAO.csprojResolveAssemblyReference.cache
 E:\RepositorioGit\NorthWindRepo\Northwind.DAO\obj\Debug\Northwind.DAO.dll
 E:\RepositorioGit\NorthWindRepo\Northwind.DAO\obj\Debug\Northwind.DAO.pdb
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\bin\Debug\Northwind.DAO.dll
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\bin\Debug\Northwind.DAO.pdb
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\bin\Debug\NorthWind.Entity.dll
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\bin\Debug\NorthWind.Entity.pdb
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\obj\Debug\Northwind.DAO.csprojResolveAssemblyReference.cache
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\obj\Debug\Northwind.DAO.dll
+C:\RepositorioGIT\NorthWindRepo\Northwind.DAO\obj\Debug\Northwind.DAO.pdb

@@ -48,17 +48,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\DocumentoBL.cs" />
+    <Compile Include="frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCliente.Designer.cs">
       <DependentUpon>frmCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmComprobante.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmComprobante.Designer.cs">
-      <DependentUpon>FrmComprobante.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDocumento.cs">
       <SubType>Form</SubType>
@@ -74,11 +74,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmComprobante.resx">
-      <DependentUpon>FrmComprobante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDocumento.resx">
       <DependentUpon>frmDocumento.cs</DependentUpon>
@@ -95,7 +95,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report3.rdlc" />
     <None Include="Properties\DataSources\NorthWind.Entity.CabDocumentoBE.datasource" />
     <None Include="Properties\DataSources\NorthWind.Entity.DocumentoBE.datasource" />
     <None Include="Properties\DataSources\NorthWind.Entity.ItemBE.datasource" />

@@ -16,3 +16,8 @@ E:\RepositorioGit\NorthWindRepo\NorthWind.Entity\bin\Debug\NorthWind.Entity.dll
 E:\RepositorioGit\NorthWindRepo\NorthWind.Entity\bin\Debug\NorthWind.Entity.pdb
 E:\RepositorioGit\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.dll
 E:\RepositorioGit\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.pdb
+C:\RepositorioGIT\NorthWindRepo\NorthWind.Entity\bin\Debug\NorthWind.Entity.dll
+C:\RepositorioGIT\NorthWindRepo\NorthWind.Entity\bin\Debug\NorthWind.Entity.pdb
+C:\RepositorioGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.csprojResolveAssemblyReference.cache
+C:\RepositorioGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.dll
+C:\RepositorioGIT\NorthWindRepo\NorthWind.Entity\obj\Debug\NorthWind.Entity.pdb

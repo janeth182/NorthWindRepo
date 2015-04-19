@@ -16,7 +16,7 @@ namespace NorthWind.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDocumento());
+            Application.Run(new frmCategoria());
         }
     }
 }

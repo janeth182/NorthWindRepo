@@ -1,4 +1,5 @@
-﻿using NorthWind.Entity;
+﻿using Northwind.DAO;
+using NorthWind.Entity;
 using NorthWind.Win.BL;
 using System;
 using System.Collections.Generic;
@@ -129,9 +130,22 @@ namespace NorthWind.Win
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FrmComprobante oFrmComprobante = new FrmComprobante();
-            
-            oFrmComprobante.Show();
+            DocumentoBE oDocumento = new DocumentoBE();
+            CabDocumentoBE oCabecera = new CabDocumentoBE();
+            oCabecera.Cliente = otmpCliente;
+            oCabecera.FechaHora = DateTime.Now;
+            oCabecera.IGV = oFacturaBL.IGV;
+            oCabecera.SubTotal = oFacturaBL.SubTotal;
+            oCabecera.Total = oFacturaBL.Total;
+            //Agregamos la cabecera al documento
+            oDocumento.Cabecera = oCabecera;
+            oDocumento.Detalle = oFacturaBL.GetDetalle();
+            TbDocumentoDAO documento=new TbDocumentoDAO();
+            if(documento.GuardarDocumento(oDocumento)==eEstadoProceso.Correcto)
+            {
+                MessageBox.Show("Documento Guardado");
+            }
+
         }
     }
 }
